@@ -1,0 +1,280 @@
+:root{
+    --bg1: #9CC3FA;
+    --bg2: #ADD2FC;
+    --bg3: #C1DFF9;
+    --bg4: #D7E3F9;
+    --bg5: #E8F2FB;
+
+    --primary: #7FB3FA;
+    --primary-hover: #6AA4F8;
+
+    --text: #4A6B8A;
+    --border: #C9DEF7;
+    --card: rgba(255,255,255,0.8);
+}
+
+body{
+
+    background-image: url("light-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+h1{
+    text-align: center;
+    color: var(--text);
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    color: var(--text);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background: var(--primary-hover);
+}
+
+#result{
+    display:none;
+    margin-top:20px;
+    padding:15px;
+    background:#EAF4FF;
+    border:1px solid #B5D3FF;
+    border-radius:15px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+
+    background: linear-gradient(
+        to right,
+        #EDF6FF,
+        #DDEEFF
+    );
+
+    border: 1px solid #B5D3FF;
+    border-radius: 15px;
+    
+    appearance: auto;
+    -webkit-appearance:auto;
+    min-height:44px;
+    font-size:16px;
+}
+
+.container{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+
+    border-radius: 25px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.08);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+
+    box-shadow:
+    0 4px 12px rgba(127,179,250,0.4);
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo{
+    display:block;
+    margin:auto;
+    width:200px;
+}
+
+/* กล่องฟอร์ม */
+#page1{
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background: rgba(255,255,255,0.9);
+
+    border-radius: 25px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* หัวข้อ */
+#page1 h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* ช่องกรอกข้อมูล */
+#page1 input{
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+
+    border-radius: 15px;
+}
+
+/* ===== โหมดมืด ===== */
+
+.dark-mode{
+
+    background-image: url("dark-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.dark-mode .container{
+
+    background: rgba(25,25,25,0.95);
+
+    color: black;
+
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode label{
+
+    color: white;
+
+}
+
+.dark-mode input{
+
+    background: #2d2d2d;
+
+    color: white;
+
+    border: 1px solid #555;
+
+}
+
+.dark-mode button{
+
+    background: #444;
+
+    color: white;
+
+}
+
+.dark-mode button:hover{
+
+    background: #666;
+
+}
+
+.dark-mode #result{
+
+    background: #222;
+
+    color: black;
+
+    border: 1px solid #555 !important;
+
+}
+
+.dark-mode .container{
+
+    background: #1f1f1f !important;
+
+    color: white !important;
+
+}
+
+.history-card{
+
+    background:linear-gradient(
+        135deg,
+        #EAF4FF,
+        #D8EAFF
+    );
+
+    padding:12px;
+
+    margin-top:10px;
+
+    border-radius:20px;
+
+}
+
+.dark-mode .history-card{
+
+    background:#2b2b2b;
+
+    color:white;
+
+}
+
+.gallery-card{
+
+    background:white;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border-radius:15px;
+
+}
+
+.dark-mode .gallery-card{
+
+    background:#2b2b2b;
+
+    color:white;
+
+}
+
+.dark-mode #result{
+
+    background:#222 !important;
+
+    color:white !important;
+
+}
+
+.dark-mode #result h3{
+
+    color:#90EE90 !important;
+
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ระบบลงเวลาเข้าเวร</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <img src="file_00000000df1871faaec2f49468dea769.png"
+class="logo">
+
+<button onclick="window.showPage('page1')">
+📝 ลงเวลาเข้าเวร
+</button>
+
+<button onclick="window.showPage('page2')">
+🌟 สรุปเวลา
+</button>
+
+<button onclick="window.showPage('page3')">
+🖼️ คลังรูปหลักฐาน
+</button>
+
+<div class="container" id="page1">
+
+<h1>✨ ระบบลงเวลาเข้าเวร ✨</h1>
+
+<label>ชื่อผู้เข้าเวร</label>
+<input
+type="text"
+id="name"
+placeholder="กรอกชื่อผู้เข้าเวร">
+
+<label>เวลาเริ่ม</label>
+<input type="time"
+id="start">
+
+<label>เวลาสิ้นสุด</label>
+<input type="time"
+id="end">
+
+<label>แนบรูปหลักฐาน</label>
+<input type="file" id="proof" accept="image/*">
+
+<button onclick="saveTime()">
+บันทึก
+</button>
+
+<button id="themeBtn" onclick="toggleTheme()">
+🌙 โหมดมืด
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<div class="container" id="page2" style="display:none;">
+
+<h2>🌟 สรุปเวลารวม</h2>
+
+<div id="history"></div>
+
+<button onclick="editPerson()">
+✏️ แก้ไข
+</button>
+
+<button onclick="clearAllData()">
+🗑️ ลบข้อมูลทั้งหมด
+</button>
+
+</div>
+
+<div class="container" id="page3" style="display:none;">
+
+<h2>🖼️ คลังรูปหลักฐาน</h2>
+
+<div id="gallery"></div>
+
+<button onclick="clearGallery()">
+🗑️ ลบรูปทั้งหมด
+</button>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
